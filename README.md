@@ -12,5 +12,6 @@ The script should start and, after 100 characters or after ESQ is pressed (exits
 ## Creating windows executable
 
 1. pip install pyinstaller
-2. pyinstaller --paths={PATH_TO_LIB} -F -w main.py
+2. pyinstaller -F -w main.py
+   2.1 If you're using a virtual environment, use pyinstaller --paths={PATH_TO_LIB} -F -w main.py
 3. Execute main.exe on ./dist
