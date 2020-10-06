@@ -26,3 +26,4 @@ The script should start and, after 100 characters or after ESQ is pressed (exits
 ## Add file to startup
 
 I've created a batch file that copies the script to the startup folder and executes it. Simply run execute.bat
+This executable can run on a usb drive and will simply run the program on another process, meaning that the pendrive can simply be removed after executing it.
