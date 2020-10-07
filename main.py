@@ -1,4 +1,4 @@
-import smtplib, ssl, os, time
+import smtplib, ssl, os
 
 import pyautogui
 import cv2
